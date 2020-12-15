@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id='site' class='gridContainer'>
+
+        <div id='fileLoaderAndFilters' class='area_01'>
+            Select a file: <input type="file" id="myFile">
+            <button onclick='processFile()'>Process</button>
+            <button onclick='getResultData()'>Result Table</button>
+            <p>
+                <input type="text" id="stationInput" onkeyup="searchFilter()" placeholder="Busca por estação.">
+                <input type="text" id="dataInput" onkeyup="searchFilter()" placeholder="YYYY-MM-DD">
+                <!--<input type="text" id="timeInput" onkeyup="searchFilter()" placeholder="HH:MM:SS.M">-->
+            </p>
+        </div>
+
+        <div id='resultSection' class='area_02'>
+            <button onclick="exportTableToExcel('resultDataTable')">save as xls</button>
+            <table id='resultDataTable'>
+                <tr>
+                    <td></td>
+                    <td>330270001A</td>
+                    <td>330270002A</td>
+                    <td>330270003A</td>
+                    <td>330270004A</td>
+                    <td>330270005A</td>
+                    <td>330270006A</td>
+                    <td>330270007A</td>
+                    <td>330270008A</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ITAPEBA</td>
+                    <td>JACONE</td>
+                    <td>PONTA NEGRA</td>
+                    <td>GUARATIBA</td>
+                    <td>ITAIPUACU</td>
+                    <td>ITAIPUACU2</td>
+                    <td>INOA</td>
+                    <td>ESPRAIADO</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Valor Acmul</td>
+                    <td>Valor Acmul</td>
+                    <td>Valor Acmul</td>
+                    <td>Valor Acmul</td>
+                    <td>Valor Acmul</td>
+                    <td>Valor Acmul</td>
+                    <td>Valor Acmul</td>
+                    <td>Valor Acmul</td>
+                </tr>
+            </table>
+        </div>
+        <span id='sum'></span>
+        <table id="myTable"></table>
+
+        <div id='dvCSV'></div>
+
+    </div>
+
+
+
+    <script src='js/main.js'></script>
+</body>
+
+</html>

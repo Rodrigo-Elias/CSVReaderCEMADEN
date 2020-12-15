@@ -1,0 +1,41 @@
+:root{
+    --color-tableBorder: #000000;
+    --color-BG: #0c1627;
+    --color-font: #a0a7b5;
+}
+
+table, th, td {
+    border: 1px solid var(--color-tableBorder);
+    margin: auto;
+}
+
+body{
+    background-color: var(--color-BG);
+    color: var(--color-font);
+}
+
+#site{
+    display: grid;
+    grid-template-areas:
+    "area_01"
+    "area_02";
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.area_01{
+    grid-area: area_01;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.area_02{
+    grid-area: area_02;
+    text-align: center;
+    padding: 20px 0;
+}
+#resultSection{
+    display: none;
+}
+
+
