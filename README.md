@@ -6,4 +6,4 @@ It reads a CSV file that separate it's columns by ';' and apply the raw data res
 
 He can later get a result table (pre mounted now because of accentuation of some names in portuguese) where it correlates the station with the day to get te amount of rain that happened that day
 
-Works fine, and can be improved a lot. Going to be back soon on this one.
+Works fine, and can be improved a lot.
